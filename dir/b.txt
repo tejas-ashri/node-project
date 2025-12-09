@@ -1,4 +1,4 @@
-hello I am b.txt 
-hello world 
-this is the new updates 
-enjoy coding
+hello I am b.txt
+yo guys 
+I am creating a merge conflict 
+It's gonna be great mess
