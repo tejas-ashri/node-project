@@ -35,20 +35,20 @@ app.get('/files', (req,res)=>{
     });
 })
 
-// app.get("/files/:fileName", (req,res)=>{
-//     const name = req.params.fileName;
-//     const filePath = path.join(__dirname,"dir",name);
-//     fs.readFile(filePath, "utf-8", (err,data)=>{
-//         if(err){
-//             res.status(500).json({
-//                 error: "Can't read file"
-//             });
-//         }else{
-//             res.status(200).json({
-//                 data
-//             });
-//         }
-//     })
-// })
+app.get("/files/:fileName", (req,res)=>{
+    const name = req.params.fileName;
+    const filePath = path.join(__dirname,"dir",name);
+    fs.readFile(filePath, "utf-8", (err,data)=>{
+        if(err){
+            res.status(500).json({
+                error: "Can't read file"
+            });
+        }else{
+            res.status(200).json({
+                data
+            });
+        }
+    })
+})
 
 app.listen(3000);
