@@ -1,1 +1,4 @@
 hello I am b.txt
+yo guys 
+I am creating a merge conflict 
+It's gonna be great mess
